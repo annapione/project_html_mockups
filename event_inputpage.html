@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add new event</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="home_styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Add New Event</h1>
+    <form role="form">
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <label for="exampleInputEvent1">Name of Event</label>
+          <input type="text" class="form-control" id="exampleInputEvent1" placeholder="Ex: 1Y Networking Night">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <label for="exampleInputEventDescription1">Event Description</label>
+          <input type="text" class="form-control" id="exampleInputEventDescription1" placeholder="Ex: MCG-sponsored 'speed networking' event">
+        </div>
+      </div>
+      <div class="row">
+        <div class='col-sm-2'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker4'>
+                    <label for="exampleInputEventDate1">Date of Event</label>
+                    <input type='date' class="form-control" />
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar icon"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker4').datetimepicker({
+                    pickDate: false
+                });
+            });
+        </script>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+      </div>
+    </form>
+
+
+
+    <div class="row">
+      <div class="spacer50"></div>
+    </div>
+    <div class="row">
+      <div class="spacer50"></div>
+    </div>
+    <div class="row">
+      <div class="spacer50"></div>
+    </div>
+
+</div>
+</body>
+</html>
